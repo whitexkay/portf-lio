@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color: var(var(--bg-color) #484040)
+    --tex-color: #fff;
+    --main-color: rgb(255, 0, 0);
+    --other-color: rgb(213, 213, 213);
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+body{
+    background-color: rgb(42, 37, 37);
+    color: white;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i{
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.navegação{
+    display: flex;
+}
+
+.navegação a{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.navegação a:hover{
+    color: var(--main-color);
+}
+
+.header-icon{
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    font-size: 35px;
+    color: #fff;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.header-icon i{
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.header-icon i:hover{
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-text h1{
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.home-text h5{
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.home-text h3{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 28rem;
+    height: auto;
+    margin-left: 25%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px white;
+    transition: all.55 ease;
+    color: white;
+}
+
+.home-text h1 span{
+    color: red;
+}
+
+.home-text h3 span{
+    color: #44ff00;
+}
+
+.home2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home4{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home5{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home6{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.btn{
+    background: transparent;
+    border-radius: 3rem;
+}
+
+.btn:hover{
+    background-color: rgb(0, 255, 0);
+    color: white;
+    transition: 0.5s;
+}
+
+
+btn:hover{
+    background: white;
+    border: 2px solid white;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px){
+    section{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.per{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px 3%;   
+}
+
+.per h2 span{
+    color: red;
+}
+
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    gap: 15px;
+    padding: 0% 50%;
+    width: 40px;
+    height: 50px;
+    justify-content: center;
+}
+
+.redes-sociais h2{
+    padding: 0% 50%;
+    justify-content: center;
+}
+
+.redes-sociais a{
+    color: #fff;
+}
+
+.redes-sociais a:hover{
+    background: red;
+    color: #fff;
+    transition: 0.5 all;
+}
