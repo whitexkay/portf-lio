@@ -446,3 +446,33 @@ footer{
         float: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .sobre-mim {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .back {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .habilidades {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        width: 100%;
+        flex-direction: column;
+    }
+}
