@@ -273,14 +273,15 @@ span {
 }
 
 .sobre-mim {
+    display: flex;
     padding: 20px 0px 0px 0px;
     
 }
 
 .back {
+    display: flex;
     background-color: transparent;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -318,14 +319,16 @@ span {
 }
 
 .habilidades {
+    display: flex;
+    flex-direction: column;
     padding: 20px 0px 0px 0px;
     background-color: transparent;
 }
 
 .back2 {
+    display: flex;
     background-color: transparent;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -363,6 +366,8 @@ span {
 }
 
 .projects {
+    display: flex;
+    flex-direction: column;
     min-height: auto;
     padding-bottom: 7rem;
 }
@@ -413,6 +418,9 @@ span {
 
 /*Footer*/
 footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: black;
     color: white;
     padding: 30px;
@@ -448,31 +456,36 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .sobre-mim {
+    .habilidades {
         width: 100%;
-        flex-direction: column;
-        justify-content: center;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
     .back {
         width: 100%;
-        flex-direction: column;
-        justify-content: center;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .habilidades {
+    .projects-box {
         width: 100%;
-        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        width: 100%;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
     .projects {
         width: 100%;
-        flex-direction: column;
+        padding: 0;
     }
 }
