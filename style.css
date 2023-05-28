@@ -269,6 +269,7 @@ body {
 }
 
 span {
+    padding: 0px 0px 0px 20px;
     color: var(--main-color);
 }
 
@@ -291,6 +292,7 @@ span {
 }
 
 .heading {
+    display: flex;
     font-size: 4.5rem;
     text-align: left;
     color: white;
@@ -329,9 +331,10 @@ span {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    min-width: 100vh;
+    padding: 0rem 7% 0rem;
+    justify-content: left;
+    align-items: left;
 }
 
 .title {
@@ -369,6 +372,8 @@ span {
 .projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: auto;
     padding-bottom: 7rem;
 }
@@ -417,7 +422,6 @@ span {
 
 .heading {
     display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -450,6 +454,7 @@ footer{
 @media screen and (max-width: 768px) {
     section {
         width: 100%;
+        flex-direction: column;
         padding: 0;
     }
 }
@@ -463,6 +468,7 @@ footer{
 @media screen and (max-width: 768px) {
     .habilidades {
         width: 100%;
+        flex-direction: column;
         padding: 0;
     }
 }
@@ -470,6 +476,7 @@ footer{
 @media screen and (max-width: 768px) {
     .back {
         width: 100%;
+        flex-direction: column;
         padding: 0;
     }
 }
